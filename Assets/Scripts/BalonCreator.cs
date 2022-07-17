@@ -32,30 +32,27 @@ public class BalonCreator : MonoBehaviour
             }
             else if (okScript.zamanSayaci < 30 && okScript.zamanSayaci > 20)
             {
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
+                for (int i = 0; i < 2; i++)
+                {
+                    go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
+                    go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
+                }
             }
             else if (okScript.zamanSayaci < 20 && okScript.zamanSayaci > 10)
             {
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
+               for (int i = 0; i < 3; i++)
+                {
+                    go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
+                    go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
+                }
             }
             else if (okScript.zamanSayaci < 10)
             {
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
-                go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
-                go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
+                 for (int i = 0; i < 4; i++)
+                {
+                    go = Instantiate(balon, new Vector3(Random.Range(-2.25f, 2.25f), Random.Range(-8f, -9f), 0), Quaternion.Euler(0, 0, 0)) as GameObject;
+                    go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(50f * katsayi, 80f * katsayi), 0));
+                }
             }
 
             timecounter = balonCreateTime;
